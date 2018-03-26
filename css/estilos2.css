@@ -1,0 +1,343 @@
+/* CSS Document */
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+
+header{
+	display: block;
+	background-color: #B1A6A6;
+	position: relative;
+	/*height: 100px;*/
+	
+	
+}
+
+section{
+	margin: 30px 0;
+	
+}
+
+
+.caja_superior {
+	width: 100%;
+	background-color: red;
+	height: 20px;
+}
+
+header nav{
+	position:absolute;
+	top: 30px;
+	right: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+
+a.bt-menu {
+	display: block;
+	font-size: 2em;
+	color: black;
+	padding: 10px 10px;
+}
+
+nav a {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 10px;
+	text-decoration: none;
+	
+	font-family: 'Barlow Condensed', sans-serif;
+	color: black;
+}
+
+nav a:hover {
+	background-color: #F7AFAF;
+	transition: all 0.7s ease-out;
+}
+
+header .menu-bar{
+	display: none;
+}
+
+.logo {
+	padding-left: 50px;
+}
+
+.slider {
+	overflow: hidden;
+
+}
+
+.slider ul{
+	display: flex;
+	width: 300%;
+	
+	animation: slider 15s infinite;
+	animation-direction: alternate;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width:100%;
+	
+	
+}
+
+@keyframes slider {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	35% {margin-left: -100%;}
+	65% {margin-left: -100%;}
+	
+	70% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+
+}
+
+.caja_central {
+	display: flex;
+	justify-content: center;
+
+	
+}
+
+.caja_central{
+	width:100%;
+	flex-wrap: wrap;
+	
+}
+
+.box {
+/*	display: inline;*/
+
+	width: 250px;
+	margin-right: 100px;
+	margin-top: 50px;
+	
+}
+
+.box:last-child{
+	margin-right: 0;
+}
+
+
+.box p,h2{
+	text-align: center;
+}
+
+.box p{
+	padding: 10px;
+}
+
+.box img {
+	width: 100%;
+	border:1px dotted gray;
+}
+
+
+
+
+.footer, .push {
+  height: 10em;
+}
+
+
+
+
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+
+
+.box2 {
+	display: flex;
+	align-items: center;
+	width:50%;
+	height: 200px;
+	float: left;
+	padding: 30px;
+}
+
+.caja_centro {
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+	flex-wrap: wrap;
+}
+
+
+
+.titulo_box {
+	font-size:70px ;
+	font-weight: bold;
+/*	font-family: 'Barlow Condensed', sans-serif;*/
+}
+
+.textointerno {
+	font-size: 1.5em;
+/*	font-family: 'Barlow Condensed', sans-serif;*/
+}
+
+
+footer {
+	
+	align-self: flex-end;
+	width: 100%;
+	background-color: gray;
+	text-align: center;
+}
+
+.contenedor_footer {
+	padding: 20px 5px;
+	margin: auto;
+	max-width: 80%;
+}
+
+.menu-footer {
+	padding: 20px 0;
+	
+}
+
+.menu-footer a {
+	color: white;
+	text-decoration: none;
+	padding-right: 20px;
+	
+}
+
+.menu-footer a:last-child{
+	padding-right: 0px;
+}
+
+.menu-footer a:hover{
+	text-decoration:underline;
+	color:aqua;
+	transition: all 1s ease-out;
+}
+
+.footer_texto {
+	font-size: 0.7em;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+
+
+article p {
+	padding: 10px 0;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+article h1 {
+	font-size: 3em;
+	font-family: 'Mr Dafoe', cursive;
+}
+
+.formato_texto {
+	width:70%;
+	margin: 80px auto;
+}
+
+
+
+
+.sidebar {
+	position: absolute;
+	width: 250px;
+	height: 100vh;
+	background-color: #333;
+	color:#fff;
+	outline: 1px solid #2a2a2a;
+}
+
+.sidebar h2{
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	background-color: #2a2a2a;
+}
+.sidebar ul{
+	
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.sidebar li {
+	outline: 1px solid #2a2a2a;
+	/*transition: all 0.3s easy;*/
+}
+
+
+.sidebar li:hover{
+	background: #444;
+	border-left:5px solid #eee;
+	transition: all 0.4s ease-out;
+}
+.sidebar a{
+	color:#fff;
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	
+}
+
+.cuerpo {
+	width: 100%;
+	
+	position:absolute;
+	background: #eee;
+	padding:30px;
+	transition: all 0.4s ease-out;
+	
+	box-sizing: border-box;
+}
+
+.menu-bar {
+	cursor: pointer;
+	display: inline-block;
+}
+
+
+.abrir{
+	transform: translateX(250px);
+	
+}
+
+
+.contenedor_principal {
+	width: 90%;
+	height: 100%;
+	padding: 0 20px;
+	margin: auto;
+	border-left: 1px dotted gray;
+	border-right: 1px dotted gray;
+}
+
+.logo_centrado {
+	text-align: center;
+	margin-bottom: 20px;
+}

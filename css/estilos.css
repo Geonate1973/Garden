@@ -1,0 +1,558 @@
+/* CSS Document */
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	font-family: 'Barlow Condensed', sans-serif;
+	background-color: #333;
+
+}
+
+article h1 {
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Mr Dafoe', cursive;
+}
+
+
+/*COMIENZA codigo para slider*/
+.slider {
+	border: 10px solid gray;
+	overflow: hidden;
+
+}
+
+.slider ul{
+	display: flex;
+	width: 300%;
+	
+	animation: slider 15s infinite;
+	animation-direction: alternate;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width:100%;
+	
+	
+}
+
+@keyframes slider {
+	0% {margin-left: 0;}
+	30% {margin-left: 0;}
+	
+	35% {margin-left: -100%;}
+	65% {margin-left: -100%;}
+	
+	70% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
+/*Fin de codigo para slider*/
+
+
+.cajaFotoCel{
+	display:none;
+}
+
+
+
+.caja_central {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+.box {
+	width: 250px;
+	margin-right: 100px;
+	margin-top: 50px;
+	
+}
+
+.box:last-child{
+	margin-right: 0;
+}
+
+
+.box p,h2{
+	text-align: center;
+}
+
+.box p{
+	padding: 10px;
+}
+
+.box img {
+	width: 100%;
+	border:1px dotted gray;
+}
+
+
+
+
+
+
+.mapa{
+	padding: 10px;
+	border: 1px gray dotted;
+}
+
+
+
+
+.titulo_box {
+	font-size:170px ;
+	font-weight: bold;
+/*	font-family: 'Barlow Condensed', sans-serif;*/
+}
+
+.textointerno {
+	font-size: 5.5em;
+/*	font-family: 'Barlow Condensed', sans-serif;*/
+}
+
+
+
+
+
+
+
+
+article p {
+	padding: 10px 0;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+
+
+.contenedor_carta {
+	width:70%;
+	margin: 80px auto;
+
+}
+
+.formato_texto h1{
+	text-align: center;
+}
+
+
+/*SIDEBAR*/
+
+.sidebar {
+	position: absolute;
+	width: 250px;
+	height: 100vh;
+	background-color: #333;
+	color:#fff;
+	outline: 1px solid #2a2a2a;
+}
+
+.sidebar h2{
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	background-color: #2a2a2a;
+}
+.sidebar ul{
+	
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.sidebar li {
+	outline: 1px solid #2a2a2a;
+	/*transition: all 0.3s easy;*/
+}
+
+
+.sidebar li:hover{
+	background: #444;
+	border-left:5px solid #eee;
+	transition: all 0.4s ease-out;
+}
+.sidebar a{
+	color:#fff;
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	
+}
+
+.bc-carta::before {
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+	background-image: url(../img/bisteck.jpg);
+	background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.cuerpo {
+	width: 100%;
+	position:absolute;
+	background: #eee;
+	transition: all 0.4s ease-out;
+	box-sizing: border-box;
+}
+
+.menu-bar {
+	cursor: pointer;
+	display: inline-block;
+	padding:30px;
+}
+
+
+.abrir{
+	transform: translateX(250px);
+	
+}
+/*FINAL DE SIDEBAR*/
+
+.contenedor_master {
+	width: 100%;
+	height: 100%;
+	/*padding: 0 20px;*/
+	margin: auto;
+	border-left: 1px dotted gray;
+	border-right: 1px dotted gray;
+
+}
+
+
+.logo_centrado {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.contenedor_central {
+	width: 90%;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+
+
+
+.caja_centro {
+	height: 200px;
+}
+
+.box2 {
+	/*display: flex;*/
+/*	align-items: center;*/
+	text-align: center;
+	width:50%;
+	float: left;
+	
+}
+
+.titulo_box {
+	text-align: center;
+	font-size:70px ;
+	font-weight: bold;
+
+}
+
+.textointerno {
+	font-size: 1.5em;
+
+}
+
+.espacio_carta {
+	display: inline-block;
+	width: 200px;
+	border-bottom:1px dotted gray;
+	
+}
+
+.lista_carta {
+	list-style: none;
+	width: 80%;
+	margin: auto;
+}
+
+
+
+
+.texto_carta {
+	display: inline-block;
+	width: 300px;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;
+	}
+
+.texto_carta  img{
+	position: absolute;
+	top:-330px;
+	left:50px;
+	z-index: 10;
+	display: none;
+	-webkit-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;
+
+}
+.texto_carta:hover img {
+	display: block;
+	
+	-webkit-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;
+}
+
+
+#menulateral ul li{
+	font-size: 1.4em;
+	list-style: none;
+	margin-left: 20px;
+	color:dimgray;
+	padding-bottom: 10px;
+/*	text-align: right;*/
+}
+
+#menulateral ul li:hover{
+	background-color: rgba(179,171,171,0.1);
+	-webkit-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;
+}
+
+
+
+.lista_carta h2 {
+	font-size: 2em;
+	margin-top:20px;
+	
+}
+
+.nota {
+	font-size: 0.6em;
+	color:gray;
+}
+
+.doble {
+	line-height: 0.8;
+}
+
+
+.despliega {
+	display: block;
+	font-size: 2em;
+	cursor: pointer;
+	transition: all 0.6s;
+}
+
+.despliega:hover{
+	background-color: #fff;
+	border-left: 10px gray solid;
+	padding-left: 10px;
+	transition: all 0.6s;
+}
+
+
+
+#menulateral {
+	width:70%;
+	margin: auto;
+	border: 1px gray dotted;
+	padding: 20px;
+}
+
+
+.formulario_contacto {
+	width: 60%;
+	margin: auto;
+
+}
+
+
+
+
+
+
+.formato_texto {
+	width: 80%;
+
+	margin: auto;
+}
+
+.box_foto img{
+	width: 100%;
+}
+
+.box_foto {
+	width:240px;
+	height: 280px;
+	padding: 9px;
+	margin: 20px;
+	border: 1px dotted #1AC9B5;
+	
+}
+
+.gal_fotos {
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: space-around;*/
+}
+
+.caja_foto {
+	width: 220px;
+	height: 150px;
+	overflow: hidden;
+	margin: auto;
+	
+}
+
+
+
+/*FOOTER*/
+
+footer {
+	align-self: flex-end;
+	width: 100%;
+	background-color: #333;
+	padding-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-size: 0.9em;
+	
+	
+	color:#C65D5E;
+	}
+
+footer a{
+	color: gray;
+}
+
+
+.footer, .push {
+  height: 1em;
+}
+
+ul.lista_footer{
+	list-style: none;
+}
+
+.lista_footer a {
+	color:#C65D5E;	
+	text-decoration: none;
+	}
+
+.lista_footer a:hover{
+	background-color:aqua;
+	transition: all 1s ease-out;
+}
+
+
+.box_footer {
+	width:20%;
+	height: 200px;
+	padding: 40px;
+
+}
+
+.box_footer div{
+	margin-bottom:50px;
+}
+
+
+.s_centro {
+	width: 80%;
+	margin: auto;
+}
+
+.social{
+	margin: 20px auto;
+}
+
+.icono{
+	font-size: 2.5em;
+	margin-right: 20px;
+	color:#1E1D1D;
+}
+
+.icono:nth-last-child(1){
+	margin-right: 0;
+}
+
+.icono:hover {
+	color:beige;
+	transition: all 0.5s;
+}
+
+strong{
+	color:white;
+}
+
+/*FIN FOOTER*/
+
+
+
+.bg-bolsa_trabajo::before{
+	
+		content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+	background-image: url(../img/bolsa-de-trabajo.jpg);
+	background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/*.bg-bolsa_trabajo {
+	position: absolute;
+	left:0;
+	top: 0;
+	z-index: 0;
+}
+
+.bg-bolsa_trabajo img{
+	width:100%;
+	opacity: 0.5;
+	
+}*/
+
+
+
+.contenedor_box_footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}

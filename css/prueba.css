@@ -1,0 +1,17 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+}
+
+footer {
+	align-self: flex-end;
+	background-color: #556700;
+	line-height:3;
+	text-align: center;
+	width: 100%;
+	
+}
